@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-B9A188F7D131B4FBDAA80AC16DB5C9CE-Png/150/150/AvatarHeadshot/Webp/noFilter.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ส่งให้อ้วงงง</title>
+  </head>
+  <body>
+    <!-- หน้าแรก -->
+    <div id="mainPage" class="container">
+      <span class="title">อาวี่รักเค้ามั้ยยยยย</span>
+      <img id="mainImage" src="doyou.jpg" alt="Do you?" />
+
+      <!-- ปุ่มกด -->
+      <div class="button-container">
+        <button
+          id="noButton"
+          class="button"
+          onmouseover="changeImage('hm.jpg')"
+          onmouseout="resetImage()"
+          onclick="handleNoClick()"
+        >
+          ไม่
+        </button>
+        <button
+          id="loveButton"
+          class="button"
+          onmouseover="changeImage('pinkping.png')"
+          onmouseout="resetImage()"
+          onclick="showPage('lovePage')"
+        >
+          รักกก
+        </button>
+      </div>
+    </div>
+
+    <!-- หน้ากด รักกกก -->
+    <div id="lovePage" class="container hidden">
+      <h1>เย่ๆๆๆ เค้าก็รักอ้วนนนน 😻</h1>
+      <img src="loveu.png" alt="Love You" />
+    </div>
+
+    <!-- หน้าถ้ายังจะกด No เรื่อยๆ  -->
+    <div id="noPage" class="container hidden">
+      <h1>เค้าเสียใจ 😿</h1>
+      
+      <img src="die.png" alt="Die" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
